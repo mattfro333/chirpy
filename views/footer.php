@@ -13,7 +13,7 @@
    <div class="modal-dialog" role="document">
      <div class="modal-content">
        <div class="modal-header">
-         <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+         <h5 class="modal-title" id="exampleModalLabel">Chirpy</h5>
          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
            <span aria-hidden="true">&times;</span>
          </button>
@@ -35,16 +35,21 @@
      <input type="checkbox" class="form-check-input" id="exampleCheck1">
      <label class="form-check-label" for="exampleCheck1">Check me out</label>
    </div>
-   <button type="button" class="btn btn-primary">Login</button>
+   <button type="button" class="btn btn-primary" id="toggleLogin">Login</button>
  </form>
        </div>
        <div class="modal-footer">
          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-         <button type="button" class="btn btn-primary">Save changes</button>
+         <button type="button" class="btn btn-primary" id="toggleLogin">Save changes</button>
        </div>
      </div>
    </div>
  </div>
+ <script>
+ $('#toggleLogin').click(function(){
+   alert("Welcome!")
+ })
+ </script>
 
 </body>
 </html>
