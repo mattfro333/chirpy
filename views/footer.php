@@ -21,7 +21,8 @@
 
        </div>
        <div class="modal-body">
-         <form>
+ <form>
+   <input type="hidden" id="loginActive" name="loginActive" value="1">
    <div class="form-group">
      <label for="email">Email address</label>
      <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email">
@@ -47,7 +48,9 @@
  </div>
  <script>
  $('#toggleLogin').click(function(){
-   alert("Welcome!")
+   if($("#loginActive").val() == "1"){
+     alert("Login Mode");
+   }
  })
  </script>
 
